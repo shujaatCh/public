@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Azan Pakistan</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8fafc;
+            padding: 24px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        h1 {
+            color: #0f5a37;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 12px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #1e293b;
+            margin-top: 28px;
+        }
+        h3 {
+            color: #334155;
+            margin-top: 20px;
+        }
+        .meta {
+            background-color: #f1f5f9;
+            padding: 14px 18px;
+            border-radius: 8px;
+            font-size: 0.95em;
+            margin-bottom: 24px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 10px 14px;
+            text-align: left;
+            font-size: 0.9em;
+        }
+        th {
+            background-color: #f8fafc;
+            color: #0f5a37;
+        }
+        a {
+            color: #0f5a37;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        
+        <div class="meta">
+            <strong>Application:</strong> Azan Pakistan<br>
+            <strong>Package ID:</strong> com.aistudio.azanpakistan.pkazn<br>
+            <strong>Last Updated:</strong> October 14, 2026<br>
+            <strong>Contact:</strong> <a href="mailto:shujaat.ch2004@gmail.com">shujaat.ch2004@gmail.com</a>
+        </div>
+
+        <h2>1. Overview</h2>
+        <p>This Privacy Policy describes how <strong>Azan Pakistan</strong> ("we", "our", or "the app") handles user data. We take user privacy seriously and are committed to protecting any information associated with your use of our application.</p>
+        <p><strong>Azan Pakistan</strong> is built as an offline-first Islamic prayer times and Azan notification utility. We do not sell, rent, monetize, or transmit your personal data.</p>
+
+        <h2>2. Information We Access and How It Is Used</h2>
+
+        <h3>A. Location Data (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION)</h3>
+        <p><strong>Purpose:</strong> To calculate precise Islamic prayer times (Fajr, Sunrise, Dhuhr, Juma, Asr, Maghrib, and Isha) using astronomical solar calculation models, and to match your closest Pakistani city when you tap "Get Current Location".</p>
+        <p><strong>Processing & Storage:</strong> Location data is calculated strictly <em>on your device</em> in local memory. Location coordinates are <strong>never sent to external servers</strong>, never saved in any remote database, and never shared with third parties.</p>
+        <p><strong>Optional:</strong> Granting location access is completely optional. You can manually choose your city from our built-in list of Pakistani cities without granting location permission.</p>
+
+        <h3>B. Notifications & Alarms (POST_NOTIFICATIONS, SCHEDULE_EXACT_ALARM, USE_EXACT_ALARM)</h3>
+        <p><strong>Purpose:</strong> To trigger timely Azan audio alarms and display prayer notifications at the exact scheduled prayer times.</p>
+        <p><strong>Processing:</strong> Alarms and notifications are managed locally on your device via the Android operating system's built-in <code>AlarmManager</code> and <code>NotificationManager</code>. No notification or usage analytics are sent to external servers.</p>
+
+        <h3>C. Media Playback & Foreground Service (FOREGROUND_SERVICE_MEDIA_PLAYBACK)</h3>
+        <p><strong>Purpose:</strong> To play the Azan audio reliably when prayer time arrives, even when the screen is locked or the device is idle, with an interactive notification allowing you to stop or mute the Azan call at any time.</p>
+
+        <h2>3. Local Storage & Data Security</h2>
+        <p>All app settings (such as selected city, language preference, Asr juristic calculation method, and alarm toggles) are stored strictly on your local device using Android <code>SharedPreferences</code>.</p>
+        <p>We do not require account registration, passwords, or personal profiles.</p>
+
+        <h2>4. Third-Party Services and Analytics</h2>
+        <p>The app does not incorporate third-party tracking libraries, advertising SDKs, or data brokers. No browsing behavior, telemetry, or user diagnostics are collected or transmitted.</p>
+
+        <h2>5. Children's Privacy</h2>
+        <p>Azan Pakistan is safe for all audiences, including families and children. We do not knowingly solicit or collect personal information from children under the age of 13.</p>
+
+        <h2>6. Android Permissions Overview</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Permission</th>
+                    <th>Reason for Use</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code></td>
+                    <td>Determines astronomical coordinates to compute prayer times and nearest city locally on-device.</td>
+                </tr>
+                <tr>
+                    <td><code>POST_NOTIFICATIONS</code></td>
+                    <td>Delivers Azan and prayer notifications on Android 13 and above.</td>
+                </tr>
+                <tr>
+                    <td><code>SCHEDULE_EXACT_ALARM</code> / <code>USE_EXACT_ALARM</code></td>
+                    <td>Ensures the Azan alarm rings precisely at the calculated prayer time.</td>
+                </tr>
+                <tr>
+                    <td><code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td>
+                    <td>Plays Azan audio reliably in background with Stop/Dismiss playback controls.</td>
+                </tr>
+                <tr>
+                    <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+                    <td>Reschedules prayer alarms automatically after your phone restarts.</td>
+                </tr>
+                <tr>
+                    <td><code>VIBRATE</code></td>
+                    <td>Provides gentle vibration alert when prayer time is reached.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any revisions will be reflected on this page with an updated "Last Updated" date.</p>
+
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions, feedback, or concerns regarding this Privacy Policy, please contact:</p>
+        <p><strong>Developer Email:</strong> <a href="mailto:shujaat.ch2004@gmail.com">shujaat.ch2004@gmail.com</a><br>
+        <strong>Application:</strong> Azan Pakistan</p>
+    </div>
+</body>
+</html>
